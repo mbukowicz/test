@@ -1,2 +1,2 @@
 language: ruby
-install: rake test
+script: rake test
