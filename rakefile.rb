@@ -1,3 +1,6 @@
+require 'git'
+
 task :test do
- puts "WOWOWOWO"
+  g = Git.open('.')
+  puts g.log.since('2 weeks ago')
 end
